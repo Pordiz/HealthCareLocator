@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".doctorsPage">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backward_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/poppins3"
+        android:paddingTop="20dp"
+        android:text="Specialized Doctors"
+        android:textAlignment="center"
+        android:textColor="#007788"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104">
+
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167">
+
+    </ImageView>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.130">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cardioBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cardiologists"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/cardioIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/cardiologist_icon"
+            android:elevation="8dp" />
+
+        <ImageView
+            android:id="@+id/cardioIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/heart_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.390">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/famBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Family Physicians"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/famIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/physician_icon"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/famIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/stethoscope_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.520">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pediatriBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pediatrician"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/pedIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/pediatrician_icon"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/pedIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/medicalreport_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.260">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dentistBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dentist"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dentistIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/dentist_icon"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/dentistIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/toothache_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.650">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/obsgyneBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Obstetricians and Gynecologists"
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/obsIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/gynecologist_icon"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/obsIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/consultation_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        style="@style/CustomConfirmButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Find Nearest Facilities"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

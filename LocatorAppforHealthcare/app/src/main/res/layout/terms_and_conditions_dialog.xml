@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_dialog_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="#f5f5f5">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins3"
+        android:text="Terms and Conditions &amp; Privacy Policy"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+       />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/rounded_corner_background"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical">
+
+
+        <TextView
+            android:id="@+id/terms_and_conditions_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins1"
+            android:padding="16dp"
+            android:text="Please read these Terms and Conditions (\'Terms\') carefully before Hospital and Clinic Locator mobile application (\'Application\') operated by NeoDev.\n\nBy downloading, installing, or using the Application, you agree to be bound by these Terms. If you do not agree to these Terms, do not download, install, or use the Application.\n\nLicense to Use the Application\nNeoDev grants you a revocable, non-exclusive, non-transferable, limited license to download, install, and use the Application solely for your personal, non-commercial purposes strictly in accordance with these Terms.\n\nRestrictions\nYou agree not to:\n\na. License, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose, or otherwise commercially exploit the Application or make the Application available to any third party.\n\nb. Modify, make derivative works of, disassemble, decrypt, reverse compile, or reverse engineer any part of the Application.\n\nc. Remove, alter, or obscure any proprietary notice (including any notice of copyright or trademark) of NeoDev or its affiliates, partners, or suppliers.\n\nIntellectual Property\nThe Application, including user interfaces, logos, and text, is the property of NeoDev and is protected by copyright, trademark, and other intellectual property rights and laws. You may not use, copy, modify, distribute, or create derivative works from any content or part of the Application without the express written consent of NeoDev.\n\nLocation Data and Privacy\nBy using the Application, you agree to allow the Application to access your location data, as outlined in our Privacy Policy. Please refer to our Privacy Policy for information on how we collect, use, and protect your data.\n\nUpdates and Modifications\nNeoDev reserves the right to modify, suspend, or discontinue, temporarily or permanently, the Application or any service to which it connects, with or without notice and without liability to you.\n\nDisclaimer of Warranties\nThe Application is provided on an \'as is\' and \'as available\' basis. NeoDev disclaims all warranties of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.\n\nLimitation of Liability\nIn no event shall NeoDev be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your use of the Application.\n\nGoverning Law\nThese Terms shall be governed by and construed in accordance with the laws of the Republic of the Philippines, without regard to its conflict of law provisions.\n\nChanges to These Terms\nWe may update our Terms and Conditions from time to time. We will notify you of any changes by posting the new Terms and Conditions on this page. You are advised to review these Terms periodically for any changes.\n\nContact Us\n\ If you have any questions or concerns about our Terms and Conditions, please contact us at neodev@gmail.com. \n\ \n\           Privacy Policy\n\nHospital and Clinic Locator is developed and owned by NeoDev. This privacy policy outlines the types of information that our app collects, how we use that information, and how we protect it.\n\nBy using our app, you agree to the collection and use of information in accordance with this policy.\n\nInformation Collection and Use\n\nOur app collects the following types of information:\n\nLocation data: We collect your location data using the following permissions: ACCESS_FINE_LOCATION and ACCESS_COARSE_LOCATION. This data is used to determine your current location and provide you with information on the nearest healthcare facilities.\n\nCamera and storage access: We request permission to access your device's camera and storage (READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE) when you use the \'Add Facilities\' feature. This is used to upload a photo or take a picture of the facility you wish to add.\n\nInternet access: Our app requires the INTERNET permission to access and display data from our servers and to provide you with healthcare information.\n\nWe do not collect, store or share any personally identifiable information about our users. The information collected by our app is used solely to improve the functionality and user experience.\n\nData Storage and Security\n\nAll data collected by our app is stored locally on your device and is not transmitted to any external servers. We employ industry-standard security measures to protect your data from unauthorized access and disclosure.\n\nChanges to This Privacy Policy\n\nWe may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.\n\nContact Us\n\nIf you have any questions or concerns about our Privacy Policy, please contact us at healthcarefacilitieslocator@gmail.com.
+"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/terms_and_conditions_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins1"
+            android:textStyle="bold"
+            android:text="I agree to the Terms and Conditions" />
+
+        <CheckBox
+            android:id="@+id/privacy_policy_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins1"
+            android:textStyle="bold"
+            android:layout_marginTop="-22dp"
+            android:textColor="#000000"
+            android:text="I agree to the Privacy Policy" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dialog_button_container"
+        android:layout_width="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/decline_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@android:color/white"
+            android:text="Decline"
+            app:cornerRadius="50dp"
+            app:strokeColor="#FF0000"
+            app:strokeWidth="2dp"
+            android:textColor="#FF0000" />
+
+
+        <com.google.android.material.button.MaterialButton
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@android:color/white"
+            app:cornerRadius="50dp"
+            app:strokeColor="#007788"
+            app:strokeWidth="2dp"
+            android:text="Accept"
+            android:textColor="#007788"
+            android:visibility="gone"  />
+    </LinearLayout>
+</LinearLayout>
+
+

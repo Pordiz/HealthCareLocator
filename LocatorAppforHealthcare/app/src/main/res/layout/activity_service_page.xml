@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btnbg"
+    android:padding="20dp"
+    tools:context=".servicePage">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/prev1Btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backward_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/poppins3"
+        android:paddingTop="20dp"
+        android:text="Medical Services"
+        android:textAlignment="center"
+        android:textColor="#007788"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167">
+
+    </ImageView>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.830">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/PrenatalBtn"
+        style="@style/CustomOptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Prenatal Checkup"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/preIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/prenatal"
+        android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/preIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ultrasoundd_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.720">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/GeneralBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="General Checkup"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/genIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/examination"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/genIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/health_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.610">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emergencyBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Emergency Care"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/emeIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/emergency"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/emeIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ambulancee_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.280">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/AnimalVBtn"
+        style="@style/CustomOptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Animal Bite Vaccine"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/aniIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/vaccine"
+        android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/aniIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/accident_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.390">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/TetanusBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Anti Tetanus Vaccine"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/tetaIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/syringe"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/tetaIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/tetanus_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.500">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ChildrenBtn"
+            style="@style/CustomOptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Children Checkup"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/chilIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/pediatrician"
+            android:elevation="8dp" />
+        <ImageView
+            android:id="@+id/chilIconSelected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/medicalcheckup_icon"
+            android:elevation="8dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/confirm1Btn"
+        style="@style/CustomConfirmButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Find Nearest Facilities"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.960" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

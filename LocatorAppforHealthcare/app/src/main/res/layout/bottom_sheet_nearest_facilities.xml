@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top 3 Nearest Facilities"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/facility1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facility 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <TextView
+        android:id="@+id/facility2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facility 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <TextView
+        android:id="@+id/facility3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facility 3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+</LinearLayout>

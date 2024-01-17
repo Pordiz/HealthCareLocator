@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".MainPage">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/abotbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/about"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/textView"
+        android:fontFamily="@font/poppins1"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:text="Choose for nearest doctor or healthcare facilities that offer the service you need!"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:paddingTop="15dp"
+        android:fontFamily="@font/poppins3"
+        android:textStyle="bold"
+        android:text="What are you looking for?"
+        android:textAlignment="center"
+        android:textColor="#007788"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="257dp"
+        android:layout_height="4dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dctorsbtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/doctor_before"
+            android:contentDescription="Doctor button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <TextView
+            android:id="@+id/doctorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/LabelStyle"
+            android:text="Doctors"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/dctorsbtn"
+            app:layout_constraintEnd_toEndOf="@+id/dctorsbtn"
+            app:layout_constraintStart_toStartOf="@+id/dctorsbtn"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.7" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/srvicebtn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/healthcare_before"
+            android:contentDescription="Service button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.858"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <TextView
+            android:id="@+id/serviceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/LabelStyle"
+            android:text="Medical Services"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/srvicebtn"
+            app:layout_constraintEnd_toEndOf="@+id/srvicebtn"
+            app:layout_constraintStart_toStartOf="@+id/srvicebtn"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.7" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chatbot_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Chatbot button"
+        android:src="@drawable/bot_icon1"
+        android:tooltipText="Chat with Health Mate"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dctorsbtn"
+        app:layout_constraintVertical_bias="0.858"
+        app:maxImageSize="45dp"
+        app:tint="@null" />
+    <ImageView
+        android:id="@+id/chatbot_pulse"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/pulsating_animation"
+        app:layout_constraintBottom_toBottomOf="@+id/chatbot_button"
+        app:layout_constraintEnd_toEndOf="@+id/chatbot_button"
+        app:layout_constraintStart_toStartOf="@+id/chatbot_button"
+        app:layout_constraintTop_toTopOf="@+id/chatbot_button" />
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chatbot_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need help?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:chipBackgroundColor="@color/colorAccent"
+        app:chipCornerRadius="16dp"
+        app:chipEndPadding="8dp"
+        app:chipStartPadding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/chatbot_button"
+        app:layout_constraintEnd_toEndOf="@+id/chatbot_button"
+        app:layout_constraintStart_toStartOf="@+id/chatbot_button" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirmation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#007788"
+        app:cornerRadius="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srvicebtn"
+        app:layout_constraintVertical_bias="0.30" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

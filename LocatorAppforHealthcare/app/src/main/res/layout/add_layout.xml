@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".AddFacilityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pin_add"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins3"
+                android:text="CONTRIBUTE A LOCATION"
+                android:textSize="20dp"
+                android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins3"
+            android:text="Pick the location on the map and pin it to get the Latitude and Longitude." />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pick_location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="Pick Location"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/latitude_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/latitude_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/longitude_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/longitude_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longitude"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins3"
+            android:text="Input the Faclity details." />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/facility_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Facility Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/facility_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Facility Address" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/facility_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Facility Phone Number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/facility_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Facility Opening Hours" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_spinner_background">
+
+            <Spinner
+                android:id="@+id/facility_category"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:popupBackground="#000000"
+                android:textColor="#000000"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/facility_category_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:paddingLeft="8dp"
+                android:text="Facility Type"
+                android:textColor="#8A000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/custom_spinner_arrow" />
+        </FrameLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins3"
+            android:text="Services Offered" />
+
+        <RadioGroup
+            android:id="@+id/services_type_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/doctors_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins1"
+                android:text="Doctors" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/medical_services_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins1"
+                android:text="Medical Services" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/both_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins1"
+                android:text="Both" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/doctors_checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/doctors_cardiologist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Cardiologist" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/doctors_dentist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Dentist" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/doctors_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Family Physician" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/doctors_pediatrician"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Pediatrician" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/doctors_gynecologist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Gynecologist and Obstetrician" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/medical_services_checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/services_animalbite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Animal Bite Vaccine" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/services_antitetanus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Anti Tetanus Vaccine" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/services_children"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Children Checkup" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/services_emergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Emergency Care" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/services_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="General Checkup" />
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/services_prenatal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Prenatal Checkup" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins3"
+            android:text="Take a picture or upload a picture of the facility." />
+
+        <ImageView
+            android:id="@+id/facility_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder_image"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/upload_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:text="Take a Photo or Upload Image"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit_facility_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="Submit"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

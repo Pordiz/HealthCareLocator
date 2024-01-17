@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LocatorAppforHealthcare</string>
+    <string name="back_button_description">Back button</string>
+    <string name="google_maps_key">AIzaSyAMTAqRjdLMXqILa6uEGsjAkM_J1sZIav0</string>
+    <string-array name="facility_categories">
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+</resources>

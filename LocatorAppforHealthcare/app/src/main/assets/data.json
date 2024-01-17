@@ -1,0 +1,1182 @@
+[
+  {
+    "name": "Veterans Health Center",
+    "latitude": 14.683774496662828,
+    "longitude": 121.07600757033536,
+    "address": "6 Faustino Street, Holy Spirit, 1127 Quezon City , Metro Manila",
+    "phone": "0929-555-2780",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+
+  {
+    "name": "Republic Health Center",
+    "latitude": 14.693641144415245,
+    "longitude": 121.07126799303583,
+    "address": "456 Republic Ave.",
+    "phone": "0925-870-9668",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "Prenatal",
+      "Gynecologist",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Sta. Catalina Health Center",
+    "latitude": 14.689405518469181,
+    "longitude": 121.08378882984373,
+    "address": "37 J P Rizal, Quezon City, 1127 Metro Manila",
+    "phone": "+1 555 987 6543",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Family Physician",
+      "Children Checkup",
+      "General Checkup"
+      ]
+  },
+  {
+    "name": "A.F Holy Spirit Medical Clinic",
+    "latitude": 14.6867787857846,
+    "longitude": 121.084403825954,
+    "address": "24 G B F Homes Rd, Quezon City, 1100 Metro Manila",
+    "phone": "0289510105",
+    "opening_hours": "Open 24 hours",
+    "category": "Private",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "Prenatal",
+      "Gynecologist",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Emergency Care"
+    ]
+  },
+  {
+    "name": "Holy Spirit Living-In & Family Planning",
+    "latitude": 14.691132592487492,
+    "longitude": 121.08149247933827,
+    "address": "188 Santo Nino, Quezon City, 1127 Metro Manila",
+    "phone": "0233875361",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician",
+      "Prenatal",
+      "Gynecologist"
+    ]
+  },
+  {
+    "name": "FAMILYDOC Holy Spirit",
+    "latitude": 14.68399853570782,
+    "longitude": 121.07738292656519,
+    "address": "Lot 17, Block 5 Don Faustino, Quezon City, 1127 Metro Manila",
+    "phone": "0926-786-2997",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician",
+      "Family Physician",
+      "Gynecologist"
+    ]
+  },
+  {
+    "name": "Valiant Medical Clinic",
+    "latitude": 14.679371340352807,
+    "longitude": 121.08093924081099,
+    "address": "17 Holy Spirit Dr, Quezon City, 1127 Metro Manila",
+    "phone": "(02) 8236 0494",
+    "opening_hours": "7:00 AM - 3:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician",
+      "Prenatal",
+      "Gynecologist",
+      "Anti Tetanus Vaccine",
+      "Emergency Care",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "CMC Maternity Family Planning Clinic",
+    "latitude": 14.692103232881026,
+    "longitude": 121.07022153945194,
+    "address": "Sampaguita Street, Holy Spirit , 1127 Quezon City , Metro Manila",
+    "phone": "0234301390",
+    "opening_hours": "9:00 AM - 4:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician",
+      "Prenatal",
+      "Gynecologist"
+    ]
+  },
+  {
+    "name": "Alvarez Dental Clinic",
+    "latitude": 14.686471708819173,
+    "longitude": 121.08446883120295,
+    "address": "25 B F Homes Rd, Quezon City, 1127 Metro Manila",
+    "phone": "(02) 3428 5546",
+    "opening_hours": "10:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Ordent Dental Clinic",
+    "latitude": 14.67960277639329,
+    "longitude": 121.08112532656766,
+    "address": "18 Holy Spirit Dr, Quezon City, 1127 Metro Manila",
+    "phone": "0917 501 9861",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Smile Shop Dental Clinic",
+    "latitude": 14.680708531746152,
+    "longitude": 121.08014439957745,
+    "address": "Unit B Holy Spirit drive corner Don Matias St. Don Antonio Heights Commonwealth, Unit B Don Matias, Quezon City, Metro Manila",
+    "phone": "0905 275 9830",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Turbolencia Dental Clinic",
+    "latitude": 14.686448403310061,
+    "longitude": 121.08475205908664,
+    "address": "#28-D, Barangay Holy Spirit Bf Road, Quezon City",
+    "phone": "(02) 8743 6728",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "J. D. L. Alvarez Dental Clinic",
+    "latitude": 14.686368962632397,
+    "longitude": 121.08561600879102,
+    "address": "15 B F Homes Rd, Quezon City, 1127 Metro Manila",
+    "phone": "(02) 3428 5546",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Dr. Jennifer Alvarez Dental Clinic",
+    "latitude": 14.6867350707524,
+    "longitude": 121.08465161244709,
+    "address": "425, BF Homes Road, Barangay Holy Spirit, Batasan, Quezon City, 1127 Metro Manila",
+    "phone": "(02) 3428 5546",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Pulmo Clinic",
+    "latitude": 14.683041235713839,
+    "longitude": 121.07779875601945,
+    "address": "Don Antonio Heights North, Don Faustino, Quezon City, 1127 Metro Manila",
+    "phone": "No Number Available",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician"
+    ]
+  },
+  {
+    "name": "Lazon Pediatric and Family",
+    "latitude": 14.69042896362586,
+    "longitude": 121.08589141368184,
+    "address": "326, San Simon Street, Barangay Holy Spirit, Quezon City, 1100 Metro Manila",
+    "phone": "(02) 3430 5175",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Commonwealth Health Center",
+    "latitude": 14.696863638359082,
+    "longitude": 121.08914669713491,
+    "address": "Katuparan, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Prenatal",
+      "Gynecologist",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "General Checkup",
+      "Children Checkup"
+    ]
+  },
+  {
+    "name": "NGC Sentrong Sigla Health Center",
+    "latitude": 14.696483693796885,
+    "longitude": 121.07932927994139,
+    "address": "MRB Compound Pilot Drive, Quezon City, 1121 Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Prenatal",
+      "Cardiologist",
+      "Gynecologist",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "General Checkup",
+      "Children Checkup"
+    ]
+  },
+  {
+    "name": "OB STATION Clinic and Ultrasound",
+    "latitude": 14.701467632734307,
+    "longitude": 121.08717437871603,
+    "address": "2nd Floor Plaza 8 Building Hon. B. Soliven Corner Pres. Quezon Street Brgy, Quezon City, Metro Manila",
+    "phone": "09178035937",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician",
+      "Prenatal",
+      "Gynecologist"
+    ]
+  },
+  {
+    "name": "DGA Dental Clinic",
+    "latitude": 14.69816242297539,
+    "longitude": 121.08340149712005,
+    "address": "Ecol St. Commonwealth Quezon City",
+    "phone": "No Available Number",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Santos Dental Clinic",
+    "latitude": 14.699814693717439,
+    "longitude": 121.08672308452294,
+    "address": "No. 2205, Unit 2 Lower Ground Floor Lennjul Building, Commonwealth Avenue, Commonwealth, Quezon City",
+    "phone": "0287031406",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Celebryteeth Dental Clinic",
+    "latitude": 14.693335935617215,
+    "longitude": 121.08463153822473,
+    "address": "60 Riverside Street Barangay Commonwealth Quezon City, Philippines, 1121 Metro Manila",
+    "phone": "0282824209",
+    "opening_hours": "9:00 AM - 3:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Benken Dental Clinic",
+    "latitude": 14.696937179869948,
+    "longitude": 121.08541769284973,
+    "address": "1653 Villongco St. Mangahan, Brgy. 1122, Quezon City, Metro Manila",
+    "phone": "0917 621 0289",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "RC Vicente Dental Clinic",
+    "latitude": 14.69338955670768,
+    "longitude": 121.08433806706489,
+    "address": "1301 Riverside St, Quezon City, 1127 Metro Manila",
+    "phone": "(02) 7587 6470",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Wonderful Smile Dental Clinic",
+    "latitude": 14.697323356417716,
+    "longitude": 121.08423723270248,
+    "address": "1121 Villonco, Quezon City, Metro Manila",
+    "phone": "0905 120 3020",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Dental Essential",
+    "latitude": 14.701640726173022,
+    "longitude": 121.08721618485092,
+    "address": "Block 1 lot 3, Steve Street (Pres. Quezon), Barangay Commonwealth, Quezon City, 1121 Metro Manila",
+    "phone": "(02) 8514 2791",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Dr. Marcelino V. Marquez Dental Clinic",
+    "latitude":14.696891756233196 ,
+    "longitude": 121.08581194798109,
+    "address": "228 Villongco Street, Quezon City, 1121 Metro Manila",
+    "phone": "0288995326",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "MVLABARO Midwife Clinic",
+    "latitude": 14.69388691455253,
+    "longitude": 121.08003750631764,
+    "address": "Molave St. Commonwealth Quezon City",
+    "phone": "No Number Available",
+    "opening_hours": "Open 24 Hours",
+    "category": "Private",
+    "services": [
+      "Gynecologist",
+      "Prenatal"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Batasan Hills Super Health Center",
+    "latitude": 14.686276787036574,
+    "longitude": 121.08845855601545,
+    "address": "Batasan Rd, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Dentist",
+      "Pediatrician",
+      "Prenatal",
+      "Gynecologist",
+      "Animal Bite Vaccine",
+      "General Checkup",
+      "Children Checkup"
+    ]
+  },
+  {
+    "name": "Batasan Annex Health Center",
+    "latitude": 14.686170989748007,
+    "longitude": 121.09907629711996,
+    "address": "Bills St, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Dentist",
+      "Pediatrician",
+      "Prenatal",
+      "Gynecologist",
+      "Animal Bite Vaccine",
+      "General Checkup",
+      "Children Checkup"
+    ]
+  },
+  {
+    "name": "Eastmed Animal Bite Medical Center Inc.",
+    "latitude": 14.685008078933334,
+    "longitude": 121.09179009711984,
+    "address": "63 Luzon st., Luzviminda Village, Quezon ",
+    "phone": "No Available Number",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Anti Tetanus Vaccine",
+      "Animal Bite Vaccine"
+    ]
+  },
+  {
+    "name": "M & J Dental Clinic",
+    "latitude": 14.686684459896064,
+    "longitude": 121.0906580327023,
+    "address": "Yellow Building, 32 Batasan Rd, Quezon City, 1126 Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:30 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Banaag Dental Clinic",
+    "latitude": 14.685082889748795,
+    "longitude": 121.09069449711988,
+    "address": "35 A Filinvest 1 Road, Quezon City, 1126 Metro Manila",
+    "phone": "(02) 8281 9959",
+    "opening_hours": "9:30 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Xena Dental Clinic",
+    "latitude": 14.686156584328916,
+    "longitude": 121.08928399712627,
+    "address": "22 Ibp Road, Barangay Batasan Hills, Quezon City, 1126 Metro Manila",
+    "phone": "(02) 3430 4708",
+    "opening_hours": "9:30 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Dentista At Your Service",
+    "latitude": 14.684173722210208,
+    "longitude": 121.09071148546451,
+    "address": "12-A Filinvest 1 Road, Quezon City, Metro Manila",
+    "phone": "(02) 3427 0818",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Xperteeth Dental Clinic",
+    "latitude": 14.690433381529491,
+    "longitude": 121.09674562043797,
+    "address": "Blk 1 Lot 11 Kakampi St, Constitution Hills, Quezon City, 1126 Metro Manila",
+    "phone": " (02) 8470 7076",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Rosario Maclang Bautista General Hospital",
+    "latitude": 14.686211673482996,
+    "longitude": 121.08893603822257,
+    "address": "Batasan Rd, Quezon City, Metro Manila",
+    "phone": " No Number Available",
+    "opening_hours": "Open 24 Hours",
+    "category": "Public",
+    "services": [
+      "Cardiologist",
+      "Emergency Care"
+    ]
+  },
+  {
+    "name": "Esmino Pediatric Clinic - Batasan Hills",
+    "latitude": 14.690347314380377,
+    "longitude": 121.09678748007096,
+    "address": "Block 1, Lot 19 Batasan-San Mateo Rd, Quezon City, 1126 Metro Manila",
+    "phone": "0928 968 8619",
+    "opening_hours": "1:00 PM - 3:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician"
+    ]
+  },
+  {
+    "name": "Emerene Q. Roque, MD",
+    "latitude": 14.685430981630466,
+    "longitude": 121.0905284971116,
+    "address": ": Klinik ng Bata at Matanda, 92 Filinvest 1 Road, Quezon City, 1126 Metro Manila",
+    "phone": "(02) 3430 4643",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Bagong Silangan Super Health Center",
+    "latitude": 14.697585038351493,
+    "longitude": 121.11065472656773,
+    "address": "A. Bonifacio St., Lungsod Quezon, 1119 Kalakhang Maynila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Sitio Veterans Health Center",
+    "latitude": 14.706898267064231,
+    "longitude": 121.10520905479028,
+    "address": "Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "Open 24 hours",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Emergency Care",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Goodhealth Medical Clinic",
+    "latitude": 14.697179567533997,
+    "longitude": 121.10977548607977,
+    "address": "81 Gen Geronimo, Quezon City, 1119 Metro Manila",
+    "phone": "09333103011",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Pediatrician",
+      "Prenatal"
+    ]
+  },
+  {
+    "name": "Sta. Rita De Casia Medical & Dental Clinic",
+    "latitude": 14.70635449822716,
+    "longitude": 121.10620377932896,
+    "address": "Peacock, Quezon City, Metro Manila",
+    "phone": "No Number Available",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Smile Up Dental Clinic",
+    "latitude": 14.696970016054353 ,
+    "longitude": 121.11012499960903,
+    "address": "1119 Gen. Villamor, Quezon City, Metro Manila",
+    "phone": "No Number Available",
+    "opening_hours": "9:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Celber Dental Clinic",
+    "latitude":  14.706509933135955,
+    "longitude": 121.10580736166148,
+    "address": "Sitio Veterans, Del Carmen School, Area 1 Dove, Silangan, Quezon City, 1102 Metro Manila",
+    "phone": "No Number Available",
+    "opening_hours": "8:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Manibog-Campos Dental Clinic",
+    "latitude":  14.697350325847731,
+    "longitude": 121.1087762339319,
+    "address": "682 J. P. Rizal, Quezon City, Metro Manila",
+    "phone": "No Number Available",
+    "opening_hours": "10:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "KDent Dental Clinic",
+    "latitude":  14.706911861707095,
+    "longitude": 121.10518067767939,
+    "address": "Dove St. Bagong Silangan Quezon City",
+    "phone": "No Number Available",
+    "opening_hours": "10:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "EzM Medical Care Clinic",
+    "latitude":  14.697295934207691,
+    "longitude": 121.1110041020318,
+    "address": "568 Bonifacio, Quezon City, 1119 Metro Manila",
+    "phone": "0234273252",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "General Checkup",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine"
+    ]
+  },
+  {
+    "name": "PJL Medical Clinic",
+    "latitude":  14.700113896894846,
+    "longitude": 121.11171215304026,
+    "address": "Gen Geronimo Extention, Quezon City, 1119 Metro Manila",
+    "phone": "09483625094",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "General Checkup",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine"
+    ]
+  },
+  {
+    "name": "Timely Medical Clinic",
+    "latitude": 14.706949418631195,
+    "longitude":  121.10479887240695,
+    "address": "Area 1 Dove Sitio Veterans, Silangan, Quezon City, 1102 Metro Manila",
+    "phone": "0285465031",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "General Checkup",
+      "Gynecologist",
+      "Prenatal"
+    ]
+  },
+  {
+    "name": "Beth-el Medical Clinic",
+    "latitude": 14.69611653558807,
+    "longitude":  121.11032963824617,
+    "address": "602 Malvar Street, 242 Del Pilar Ext, Quezon City, 1119 Metro Manila",
+    "phone": "09164772124",
+    "opening_hours": "Open 24 Hours",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "General Checkup",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Prenatal"
+    ]
+  },
+  {
+    "name": "Blessed Dental Clinic",
+    "latitude":  14.693749128358133,
+    "longitude": 121.1105682943972,
+    "address": "682 J. P. Rizal, Quezon City, Metro Manila",
+    "phone": "2602369",
+    "opening_hours": "1:00 PM - 8:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+  {
+    "name": "Ton-Ogan Dental Clinic",
+    "latitude":  14.69665196201893,
+    "longitude": 121.11023163270471,
+    "address": "555 Gen. Villamor, Quezon City, 1119 Metro Manila",
+    "phone": "0234312813",
+    "opening_hours": "9:00 AM - 9:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "name": "Payatas A Health Center",
+    "latitude": 14.698032634118146,
+    "longitude": 121.09469183944996,
+    "address": "Ilang-ilang, Quezon City, Metro Manila",
+    "phone": "09209219234",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Payatas B Health Center",
+    "latitude": 14.71549234165965,
+    "longitude": 121.10213947073595,
+    "address": "57 Bulacan, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Payatas Super Health Center",
+    "latitude": 14.709917584029357,
+    "longitude": 121.09665085601588,
+    "address": "Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Payatas Health Center",
+    "latitude": 14.704189394364507,
+    "longitude": 121.08997519960717,
+    "address": "Blk 7 Gravel pit, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Lupang Pangako Health Center",
+    "latitude": 14.718949869388826,
+    "longitude": 121.10622164374661,
+    "address": "Clemente, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Dona Nicasia Health Center",
+    "latitude": 14.707418364207895,
+    "longitude": 121.09117452042051,
+    "address": "Dona Nicasia, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Public",
+    "services": [
+      "Pediatrician",
+      "Dentist",
+      "Cardiologist",
+      "General Medicine",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine",
+      "Children Checkup",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "M. Cortez Dental Clinic",
+    "latitude": 14.703578089736947,
+    "longitude": 121.09594523270253,
+    "address": "193 Ilang-ilang, Payatas A, Quezon City, 1119 Metro Manila",
+    "phone": "09286832776",
+    "opening_hours": "10:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+
+    ]
+  },
+  {
+    "name": "ZPH Medical, Dental & Optic Clinic",
+    "latitude": 14.701066795337027,
+    "longitude": 121.09458385601566,
+    "address": "Open 24 Hours",
+    "phone": "0279164884",
+    "opening_hours": "10:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist",
+      "Family Physician",
+      "Gynecologist",
+      "Prenatal",
+      "Animal Bite Vaccine",
+      "Anti Tetanus Vaccine"
+
+    ]
+  },
+  {
+    "name": "Smile Up Dental Clinic",
+    "latitude": 14.700123441140457,
+    "longitude": 121.09523489713102,
+    "address": "97 Ilang-ilang, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+
+    ]
+  },
+  {
+    "name": "Edrada Dental Clinic",
+    "latitude": 14.706729886902144,
+    "longitude": 121.093974826568,
+    "address": "Payatas A San Isidro, Quezon City, Metro Manila",
+    "phone": "09478834771",
+    "opening_hours": "8:00 AM - 4:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+
+    ]
+  },
+  {
+    "name": "PUA Dental Clinic",
+    "latitude": 14.705572540163294,
+    "longitude": 121.09648766466006,
+    "address": "San Lucas, Payatas A., Quezon City, 1119 Metro Manila",
+    "phone": "0283430871",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+
+    ]
+  },
+  {
+    "name": "Canoso Dental Clinic",
+    "latitude": 14.698247584175459,
+    "longitude": 121.09678033822442,
+    "address": "33 Santan, Payatas A, Quezon City, Metro Manila",
+    "phone": "09279927117",
+    "opening_hours": "10:00 AM - 6:00 PM",
+    "category": "Private",
+    "services": [
+      "Dentist"
+
+    ]
+  },
+  {
+    "name": "Fr Angelo Falardi Health Center",
+    "latitude": 14.706631461412648,
+    "longitude": 121.09510323270243,
+    "address": "09 Santo Niño St, Quezon City, 1119 Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "5:00 AM - 12:00 PM",
+    "category": "Private",
+    "services": [
+      "General Checkup",
+      "Emergency Care"
+    ]
+  },
+  {
+    "name": "FirstCare Medical Services",
+    "latitude": 14.700556692534102,
+    "longitude": 121.09573732656818,
+    "address": "52 Ilang-ilang, Payatas A, Quezon City, 1119 Metro Manila",
+    "phone": "0955 326 3727",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Gynecologist",
+      "Emergency Care",
+      "Prenatal"
+    ]
+  },
+  {
+    "name": "Linda's Lying In Clinic Star Hope Payatas Branch",
+    "latitude": 14.71953547427876,
+    "longitude": 121.10371930386968,
+    "address": "90 Star hope Visayas Extension Payatas B, Quezon City",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Gynecologist",
+      "Prenatal"
+    ]
+  },
+  {
+    "name": "Val-SIA Family Clinic",
+    "latitude": 14.701298192539006,
+    "longitude": 121.09597099712008,
+    "address": "129 Ilang-ilang, Payatas , 1119, Quezon City, 1119 Metro Manila",
+    "phone": "(02) 8932 1451",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "General Checkup",
+      "Pediatrician",
+      "Family Physician",
+      "Prenatal"
+    ]
+  },
+  {
+    "name": "Corrales Medical Clinic",
+    "latitude": 14.703370489737084,
+    "longitude": 121.09604139712,
+    "address": "195 Ilang-ilang, Quezon City, Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "Emergency Care"
+    ]
+  },
+  {
+    "name": "Celis Medical Clinic",
+    "latitude": 14.699696389739492,
+    "longitude": 121.095207026568,
+    "address": "65-B Ilang-ilang, Payatas A, Quezon City, 1100 Metro Manila",
+    "phone": "(02) 8208 0321",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "Emergency Care",
+      "Family Physician"
+    ]
+  },
+  {
+    "name": "Corrales Medical Clinic (Lupang Pangako Branch)",
+    "latitude": 14.71807853537723,
+    "longitude": 121.10760503822469,
+    "address": "#19 Block 2 Phase 3 Lupang Pangako, Quezon City, Metro Manila",
+    "phone": "0949 758 9610",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "Emergency Care"
+    ]
+  },
+  {
+    "name": "Holy Wisdom Medical Clinic",
+    "latitude": 14.703798709201159,
+    "longitude": 121.09261261782557,
+    "address": "Jasmin, Quezon City, 1119 Metro Manila",
+    "phone": "No Available Number",
+    "opening_hours": "9:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Children Checkup",
+      "Prenatal",
+      "Pediatrician"
+    ]
+  },
+  {
+    "name": "Prolife Midwife Clinic",
+    "latitude": 14.69947239254145,
+    "longitude": 121.09537152679013,
+    "address": "061 Ilang-ilang, Payatas A, Quezon City, 1119 Metro Manila",
+    "phone": "(02) 8990 3961",
+    "opening_hours": "Open 24 Hours",
+    "category": "Private",
+    "services": [
+      "Prenatal",
+      "Gynecologist"
+    ]
+  },
+
+  {
+    "name": "Ilang Ilang Payatas Midwife Clinic",
+    "latitude": 14.699173286951796,
+    "longitude": 121.09560995601586,
+    "address": "55 Ilang-ilang, Payatas A, Quezon City, 1119 Metro Manila",
+    "phone": "0995 266 1378",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Prenatal"
+    ]
+  },
+  {
+    "name": "MJG Medical Clinic",
+    "latitude": 14.715692914692289,
+    "longitude": 121.09948822840623,
+    "address": "8, Manila Gravel Pit Road, Payatas B, Quezon City",
+    "phone": "(02) 3427 3824",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "General Checkup",
+      "Family Physician"
+    ]
+  },
+  {
+    "name": "Dr Lizalin P Gopez Clinic",
+    "latitude": 14.70603267815237,
+    "longitude": 121.12613179662932,
+    "address": "8 B, Gravel Pit Road, Payatas, Quezon City, 1119 Metro Manila",
+    "phone": "0918 237 1419",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Family Physician",
+      "General Checkup"
+    ]
+  },
+  {
+    "name": "Parkwood Medical Maternity & Pediatric Center",
+    "latitude":14.726717988428137 ,
+    "longitude": 14.726717988428137,
+    "address": "Payatas Rd, Quezon City, Metro Manila",
+    "phone": "No Number Available",
+    "opening_hours": "8:00 AM - 5:00 PM",
+    "category": "Private",
+    "services": [
+      "Prenatal",
+      "Pediatrician",
+      "Gynecologist"
+    ]
+  }
+]

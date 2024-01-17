@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="120dp"
+            android:height="120dp"
+            android:viewportWidth="120"
+            android:viewportHeight="120">
+            <path
+                android:name="circle"
+                android:pathData="M60,60 m0,-50 a50,50 0 1,0 0,100 a50,50 0 1,0 0,-100"
+                android:fillColor="#007788" />
+        </vector>
+    </aapt:attr>
+    <target android:name="circle">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duration="1500"
+                android:propertyName="pathData"
+                android:repeatCount="infinite"
+                android:repeatMode="restart"
+                android:valueFrom="M60,60 m0,-50 a50,50 0 1,0 0,100 a50,50 0 1,0 0,-100"
+                android:valueTo="M60,60 m0,-50 a50,50 0 1,1 0,100 a50,50 0 1,1 0,-100"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+</animated-vector>

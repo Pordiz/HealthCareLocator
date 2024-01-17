@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapActivity" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/increase_displayed_facilities_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:strokeWidth="2dp"
+        app:strokeColor="#007788"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#007788"
+        android:fontFamily="@font/poppins3"
+        android:text="Show More Facilities"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp" />
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_navigation_menu"
+        style="@style/BottomNavigation" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <View
+            android:id="@+id/bottom_sheet_handle"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bottom_sheet_handle" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/rounded_corner_background"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 1 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/facility_icon_1"
+                                        android:layout_width="32dp"
+                                        android:layout_height="32dp"
+                                        android:src="@drawable/nav_icon_fac"
+                                        android:scaleType="fitCenter"
+                                        android:layout_marginRight="4dp"/>
+
+                                    <TextView
+                                        android:id="@+id/facility_name_1"
+                                        style="@style/FacilityName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Facility 1" />
+                                </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_1"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 1" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_1"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 3 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_2"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp" />
+
+                                <TextView
+                                    android:id="@+id/facility_name_2"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 1" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_2"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 1" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_2"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 3 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_3"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_3"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 1" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_3"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 1" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_3"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 4 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_4"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_4"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 4" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_4"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 4" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_4"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 5 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_5"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_5"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 5" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_5"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 5" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_5"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 6 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_6"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_6"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 6" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_6"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 6" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_6"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 7 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_7"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_7"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 7" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_7"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 7" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_7"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 8 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_8"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_8"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 8" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_8"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 8" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_8"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 9 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_9"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_9"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 9" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_9"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 9" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_9"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                app:cardBackgroundColor="#f5f5f5"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Facility 10 layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/facility_icon_10"
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/nav_icon_fac"
+                                    android:scaleType="fitCenter"
+                                    android:layout_marginRight="4dp"/>
+
+                                <TextView
+                                    android:id="@+id/facility_name_10"
+                                    style="@style/FacilityName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Facility 10" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/facility_address_10"
+                                style="@style/FacilityAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address 10" />
+
+                            <TextView
+                                android:id="@+id/facility_distance_10"
+                                style="@style/FacilityDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance: 1 km" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="end">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/facility_directions_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:padding="8dp"
+                                app:cornerRadius="16dp"
+                                app:backgroundTint="#007788"
+                                app:strokeColor="#007788"
+                                app:strokeWidth="1dp"
+                                app:icon="@drawable/ic_directions"
+                                app:iconPadding="-4dp"
+                                app:iconTint="#FFFFFF"
+                                app:iconGravity="textStart"
+                                android:text=" Directions"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
